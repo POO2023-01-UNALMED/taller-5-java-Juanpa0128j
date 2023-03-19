@@ -3,7 +3,7 @@ package zooAnimales;
 import gestion.Zona;
 
 public class Animal {
-	private int totalAnimales;
+	private static int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
@@ -15,7 +15,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.totalAnimales++;
+		totalAnimales++;
 	}
 	
 	public Animal(){
@@ -40,12 +40,12 @@ public class Animal {
 		
 	}
 	
-	public int getTotalAnimales() {
+	public static int getTotalAnimales() {
 		return totalAnimales;
 	}
 	
 	public void setTotalAnimales(int totalAnimales) {
-		this.totalAnimales = totalAnimales;
+		Animal.totalAnimales = totalAnimales;
 	}
 	
 	public String getNombre() {
