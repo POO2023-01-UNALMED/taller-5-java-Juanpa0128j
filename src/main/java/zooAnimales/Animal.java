@@ -33,7 +33,7 @@ public class Animal {
 	
 	public String toString() {
 		return "Mi nombre es " + nombre + ", tengo una edad de " + edad + ", habito en " + habitat
-				+ " y mi genero es " + genero + ", la zona en la que me ubico es " + zona + ", en el" 
+				+ " y mi genero es " + genero + ", la zona en la que me ubico es " + zona.getNombre() + ", en el" 
 				+ zona.getZoo().getNombre();
 	}
 	
@@ -83,9 +83,5 @@ public class Animal {
 	
 	public void setZona(Zona zona) {
 		this.zona = zona;
-	}
-	
-	public static void main(String args[]) {
-		System.out.print("hola" + totalAnimales);
 	}
 }
