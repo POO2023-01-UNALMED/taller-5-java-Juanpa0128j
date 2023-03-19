@@ -13,10 +13,8 @@ public class Zoologico {
 	}
 	
 	public Zoologico(){
-		this("", "");
-		
+		this("", "");	
 	}
-	
 	
 	public void agregarZonas(Zona zona) {
 		this.zonas.add(zona);	
@@ -54,5 +52,4 @@ public class Zoologico {
 	public void setZonas(ArrayList<Zona> zonas) {
 		this.zonas = zonas;
 	}
-
 }

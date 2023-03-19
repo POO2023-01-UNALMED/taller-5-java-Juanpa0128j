@@ -15,8 +15,7 @@ public class Ave extends Animal {
 	}
 	
 	public Ave(){
-		this("", 0, "", "", "");
-			
+		this("", 0, "", "", "");	
 	}
 	
 	public static int cantidadAves() {
@@ -52,5 +51,4 @@ public class Ave extends Animal {
 	public void setColorPlumas(String colorPlumas) {
 		this.colorPlumas = colorPlumas;
 	}
-	
 }
